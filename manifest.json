@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Strikethrough Highlighter",
+  "version": "1.0",
+  "description": "Highlight and strikethrough text.",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png"
+  },
+  "permissions": ["contextMenus", "nativeMessaging"],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+}
