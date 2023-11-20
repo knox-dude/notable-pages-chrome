@@ -4,23 +4,24 @@
   "version": "1.0",
   "description": "Highlight and strikethrough text.",
   "icons": {
-    "16": "icon.png",
-    "48": "icon.png"
+    "16": "static/icon.png",
+    "48": "static/icon.png"
   },
   "permissions":[
     "contextMenus",
     "nativeMessaging",
     "tabs",
     "scripting",
-    "activeTab"
+    "activeTab",
+    "storage"
   ],
   "background": {
-    "service_worker": "service-worker.js"
+    "service_worker": "js/service-worker.js"
   },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["content.js"]
+      "js": ["js/content.js"]
     }
   ],
   "action": {
