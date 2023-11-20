@@ -1,4 +1,5 @@
-# strikethrough-chrome-extension
+# Notable Pages Chrome Extension
+
 A chrome extension that allows a user to apply a strikethrough effect on text they've selected.
 
 Clone the repo, then go to the chrome extensions page ( chrome://extensions ) and select developer mode. Then select "load unpacked" and select the repository folder.
